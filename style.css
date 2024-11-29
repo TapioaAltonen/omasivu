@@ -1,0 +1,103 @@
+/* 
+  Tiedosto: styles.css
+  Kuvaus: Pienyrityksen verkkosivuston perusulkoasun CSS-määritykset.
+  Tekijä: [Sinun nimesi tai yrityksen nimi]
+  Päiväys: [Päivämäärä]
+*/
+
+/* Yleiset perusasetukset
+   Näillä asetuksilla määritellään peruskirjasinlajit ja yleiset marginaalit koko sivustolle.
+*/
+body {
+    font-family: 'Arial', sans-serif; /* Selkeä sans-serif-fontti, helppo lukea */
+    line-height: 1.6; /* Hyvä luettavuus riviväleillä */
+    margin: 0; /* Poistaa oletusmarginaalit */
+    padding: 0; /* Poistaa oletustäytteet */
+    background-color: #f8f9fa; /* Kevyt taustaväri */
+    color: #212529; /* Tummanharmaa tekstiväri, helppo silmille */
+}
+
+/* Otsikkotyylit 
+   Määritellään yhtenäinen ulkoasu kaikille otsikkotasoille.
+*/
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px 0; /* Jättää tilaa alaotsikon alle */
+    font-weight: bold; /* Korostaa otsikkoja paksummalla tekstillä */
+    color: #343a40; /* Tummempi väri erottuvuuden vuoksi */
+}
+
+/* H1 (pääotsikko) */
+h1 {
+    font-size: 2.5rem; /* Selkeä koko pääotsikolle */
+}
+
+/* H2 (alaotsikko) */
+h2 {
+    font-size: 2rem; /* Sopiva koko alaotsikolle */
+}
+
+/* Linkit ja hover-tilat */
+a {
+    color: #007bff; /* Yrityksen teemaväri linkeille */
+    text-decoration: none; /* Poistaa oletusalleviivauksen */
+}
+
+a:hover {
+    color: #0056b3; /* Tummempi sävy hover-tilassa */
+    text-decoration: underline; /* Korostaa linkkiä hover-tilassa */
+}
+
+/* Navigointivalikko */
+nav {
+    background-color: #343a40; /* Tumma taustaväri */
+    color: #ffffff; /* Valkoinen teksti */
+    padding: 10px 20px; /* Sopiva tila ympärille */
+}
+
+nav a {
+    color: #ffffff; /* Linkit valkoisina */
+    margin: 0 10px; /* Tilaa linkkien väliin */
+}
+
+nav a:hover {
+    color: #f8f9fa; /* Kevyt hover-väri */
+}
+
+/* Pääkontentti */
+main {
+    padding: 20px; /* Lisää tilaa pääsisällölle */
+    background-color: #ffffff; /* Valkoinen tausta sisällölle */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hieno varjo sisällön ympärille */
+}
+
+/* Footer (alatunniste) */
+footer {
+    background-color: #343a40; /* Sama kuin navigoinnissa */
+    color: #ffffff; /* Valkoinen teksti */
+    text-align: center; /* Keskitetty teksti */
+    padding: 15px; /* Tilaa ympärille */
+    font-size: 0.9rem; /* Pienempi tekstikoko */
+}
+
+footer a {
+    color: #007bff; /* Sama linkkiväri kuin muualla */
+}
+
+footer a:hover {
+    color: #0056b3; /* Hover-tilan väri */
+}
+
+/* Responsiivisuus (mobiililaitteet) */
+@media (max-width: 768px) {
+    nav {
+        text-align: center; /* Keskittää navigoinnin pienillä näytöillä */
+    }
+
+    main {
+        padding: 10px; /* Vähentää täytettä pienemmillä näytöillä */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Pienentää fonttikokoa */
+    }
+}
